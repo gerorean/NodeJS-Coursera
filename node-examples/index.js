@@ -1,9 +1,6 @@
-//1.4.1
-//Objects
-var rect = {
-    perimeter: (x, y) => (2*(x+y)),
-    area: (x, y) => (x*y)
-};
+//1.4.1- -1.4.1.b
+//Modules
+var rect = require('./rectangle');
 //Functions
 function solveRect(l,b) {
     console.log("Solving for rectangle with l = " + l + " and b = " + b);
