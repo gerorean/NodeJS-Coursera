@@ -1,4 +1,4 @@
-//1.4.1.b- -1.4.2
+//1.4.1.b -1.4.2
 //Exports
 module.exports = (x,y,callback) => {
     if (x <= 0 || y <= 0)

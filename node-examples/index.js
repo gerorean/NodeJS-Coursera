@@ -1,4 +1,4 @@
-//1.4.1- -1.4.1.b- -1.4.2
+//1.4.1 -1.4.1.b -1.4.2
 //Modules
 var rect = require('./rectangle');
 //Functions
