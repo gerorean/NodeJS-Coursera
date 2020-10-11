@@ -5,6 +5,8 @@ const http = require('http');
 const morgan = require('morgan');//Serving static HTML files
 const bodyParser = require('body-parser');//To parse the body of the request message
 const dishRouter = require('./routes/dishRouter');//Dish router
+const promoRouter = require('./routes/promoRouter');//Promo router
+const leaderRouter = require('./routes/leaderRouter');//Leader router
 //Constants
 const hostname = 'localhost';
 const port = 3000;
@@ -14,6 +16,8 @@ const app = express();
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use('/dishes', dishRouter);
+app.use('/promotions', promoRouter);
+app.use('/leaders', leaderRouter);
 app.use(express.static(__dirname + '/public'));
 app.use((req, res, next) => {
     //Response
